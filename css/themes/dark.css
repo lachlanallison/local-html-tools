@@ -324,6 +324,18 @@ footer.site {
 
 footer.site p { margin: 0 0 0.5rem; }
 
+.footer-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.footer-github svg {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 auto;
+}
+
 .empty-state {
   text-align: center;
   padding: 3rem 1rem;
