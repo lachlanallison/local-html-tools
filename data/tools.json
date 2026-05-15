@@ -1,0 +1,2379 @@
+{
+  "meta": {
+    "title": "Local HTML Tools",
+    "description": "A curated directory of browser-first tools where the browser does the work, especially single-file and offline-friendly HTML utilities with limited network or API dependence.",
+    "site_url": "https://localhtmltools.lachlanallison.com",
+    "version": 4
+  },
+  "tools": [
+    {
+      "id": "chrome-session-viewer",
+      "name": "Chrome Session Viewer",
+      "summary": "Parse Chrome session files in the browser-tabs, groups, history-with export. No data leaves your device.",
+      "url": "https://lachlanallison.github.io/chrome-session-viewer/",
+      "source_url": "https://github.com/lachlanallison/chrome-session-viewer",
+      "authors": [
+        {
+          "name": "Lachlan Allison",
+          "url": "https://lachlanallison.com/",
+          "github": "https://github.com/lachlanallison"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "chrome",
+        "privacy",
+        "sessions",
+        "export"
+      ],
+      "categories": [
+        "utilities",
+        "developer"
+      ],
+      "runtime": {
+        "single_file": false,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://lachlanallison.com/projects/"
+      ],
+      "added": "2026-03-28"
+    },
+    {
+      "id": "browser-extensions-icons",
+      "name": "Browser Extensions Icons",
+      "summary": "Convert SVG to standard extension icon PNGs (16-128px) and zip them with sample manifest snippets-all client-side.",
+      "url": "https://lachlanallison.github.io/browserextensionsicons/",
+      "source_url": "https://github.com/lachlanallison/browserextensionsicons",
+      "authors": [
+        {
+          "name": "Lachlan Allison",
+          "url": "https://lachlanallison.com/",
+          "github": "https://github.com/lachlanallison"
+        }
+      ],
+      "license": null,
+      "tags": [
+        "svg",
+        "png",
+        "extensions",
+        "canvas"
+      ],
+      "categories": [
+        "images",
+        "developer"
+      ],
+      "runtime": {
+        "single_file": false,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://lachlanallison.com/projects/"
+      ],
+      "added": "2026-03-28"
+    },
+    {
+      "id": "transparent-png",
+      "name": "Make Colors Transparent in PNG",
+      "summary": "Open an image, click colors to chroma-key them transparent, preview on checkerboard, download PNG.",
+      "url": "https://tools.simonwillison.net/transparent-png",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "png",
+        "transparency",
+        "images"
+      ],
+      "categories": [
+        "images"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/",
+        "https://news.ycombinator.com/item?id=46223882"
+      ],
+      "added": "2026-03-28"
+    },
+    {
+      "id": "pypi-changelog",
+      "name": "PyPI changelog diff",
+      "summary": "Paste a package name and compare two PyPI releases; copy a unified diff of changes.",
+      "url": "https://tools.simonwillison.net/pypi-changelog",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "pypi",
+        "python",
+        "diff"
+      ],
+      "categories": [
+        "developer"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "no",
+        "needs_network": true
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/",
+        "https://news.ycombinator.com/item?id=46223882"
+      ],
+      "added": "2026-03-28"
+    },
+    {
+      "id": "svg-render",
+      "name": "svg-render",
+      "summary": "Render SVG to downloadable JPEG or PNG (optional remote SVG via URL parameter).",
+      "url": "https://tools.simonwillison.net/svg-render",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "svg",
+        "export",
+        "images"
+      ],
+      "categories": [
+        "images",
+        "developer"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-03-28"
+    },
+    {
+      "id": "justhtml-playground",
+      "name": "JustHTML playground",
+      "summary": "Try the JustHTML Python parser in the browser via Pyodide with a small HTML UI.",
+      "url": "https://tools.simonwillison.net/justhtml",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "html",
+        "parser",
+        "pyodide",
+        "python"
+      ],
+      "categories": [
+        "developer"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "no",
+        "needs_network": true
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://news.ycombinator.com/item?id=46223882",
+        "https://github.com/simonw/tools/pull/156"
+      ],
+      "added": "2026-03-28"
+    },
+    {
+      "id": "image-resize-quality",
+      "name": "Image resize and quality comparison",
+      "summary": "Compare JPEG quality settings side by side when resizing images. Visually find the optimal balance between file size and quality.",
+      "url": "https://tools.simonwillison.net/image-resize-quality",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "image",
+        "jpeg",
+        "quality",
+        "resize"
+      ],
+      "categories": [
+        "images"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "image-to-jpeg",
+      "name": "Image to JPEG",
+      "summary": "Convert PNG or WebP images to JPEG format entirely in the browser. Useful for compressing screenshots or photos before sharing.",
+      "url": "https://tools.simonwillison.net/image-to-jpeg",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "image",
+        "convert",
+        "jpeg",
+        "png"
+      ],
+      "categories": [
+        "images"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "image-to-svg",
+      "name": "Image to SVG",
+      "summary": "Trace bitmap images and convert them to SVG vector paths in your browser. Handy for turning logos or sketches into scalable vectors.",
+      "url": "https://tools.simonwillison.net/image-to-svg",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "image",
+        "svg",
+        "vector",
+        "trace"
+      ],
+      "categories": [
+        "images"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "exif",
+      "name": "EXIF Viewer",
+      "summary": "Extract EXIF and GPS metadata from uploaded images. Inspect camera settings, dates, and location data embedded in photos.",
+      "url": "https://tools.simonwillison.net/exif",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "exif",
+        "metadata",
+        "gps"
+      ],
+      "categories": [
+        "images"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "compare-pdfs",
+      "name": "Compare PDFs",
+      "summary": "Visualize differences between two uploaded PDF documents. See exactly what changed between versions without any data leaving your machine.",
+      "url": "https://tools.simonwillison.net/compare-pdfs",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "pdf",
+        "diff",
+        "compare"
+      ],
+      "categories": [
+        "text-data"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "json-to-yaml",
+      "name": "JSON to YAML",
+      "summary": "Convert between JSON and YAML formats bidirectionally. Essential config wrangling tool with live preview of the conversion.",
+      "url": "https://tools.simonwillison.net/json-to-yaml",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "json",
+        "yaml",
+        "convert"
+      ],
+      "categories": [
+        "text-data"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "yaml-explorer",
+      "name": "YAML Explorer",
+      "summary": "Browse YAML documents in a collapsible tree view. Navigate complex nested YAML structures much more easily than reading raw text.",
+      "url": "https://tools.simonwillison.net/yaml-explorer",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "yaml",
+        "explorer",
+        "tree"
+      ],
+      "categories": [
+        "text-data"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "text-diff",
+      "name": "Text Diff",
+      "summary": "Character-level diff between two texts with side-by-side highlighting. Fast, local, and private - no data sent to any server.",
+      "url": "https://tools.simonwillison.net/text-diff",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "diff",
+        "text",
+        "compare"
+      ],
+      "categories": [
+        "text-data"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "writing-style",
+      "name": "Writing Style Analyzer",
+      "summary": "Find weasel words, passive voice, cliches, and duplicate phrases in your writing. A plain-text editing companion for clearer prose.",
+      "url": "https://tools.simonwillison.net/writing-style",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "writing",
+        "style",
+        "analysis"
+      ],
+      "categories": [
+        "text-data"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "emoji-identifier",
+      "name": "Emoji Identifier",
+      "summary": "Paste any emoji and get its official name, Unicode codepoint, and category. Perfect for when you need the exact name of that emoji.",
+      "url": "https://tools.simonwillison.net/emoji-identifier",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "emoji",
+        "unicode",
+        "identify"
+      ],
+      "categories": [
+        "text-data"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "alt-text-extractor",
+      "name": "Alt Text Extractor",
+      "summary": "Extract images and their alt text from pasted rich content into clean Markdown or HTML. Essential for auditing accessibility of copied content.",
+      "url": "https://tools.simonwillison.net/alt-text-extractor",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "a11y",
+        "images",
+        "extract"
+      ],
+      "categories": [
+        "text-data"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "html-preview",
+      "name": "HTML preview",
+      "summary": "Type HTML on the left and see it rendered live on the right. A fast scratchpad for prototyping markup without any server round-trips.",
+      "url": "https://tools.simonwillison.net/html-preview",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "html",
+        "preview",
+        "editor"
+      ],
+      "categories": [
+        "developer"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "clipboard-viewer",
+      "name": "Clipboard viewer",
+      "summary": "Debug everything stored in your clipboard across all formats - HTML, plain text, RTF, images. Invaluable for understanding paste behavior.",
+      "url": "https://tools.simonwillison.net/clipboard-viewer",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "clipboard",
+        "debug",
+        "viewer"
+      ],
+      "categories": [
+        "developer"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "json-diff",
+      "name": "JSON Diff",
+      "summary": "Side-by-side JSON comparison with syntax highlighting of additions, removals, and changes. Much clearer than raw textual diffs for structured data.",
+      "url": "https://tools.simonwillison.net/json-diff",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "json",
+        "diff",
+        "compare"
+      ],
+      "categories": [
+        "developer"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "sql-pretty-printer",
+      "name": "SQL Pretty Printer",
+      "summary": "Reformat SQL queries for readability with configurable indentation and line breaks. Turns monstrous one-liners into readable statements.",
+      "url": "https://tools.simonwillison.net/sql-pretty-printer",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "sql",
+        "format",
+        "pretty"
+      ],
+      "categories": [
+        "developer"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "dot",
+      "name": "DOT Graph Renderer",
+      "summary": "Render Graphviz DOT files to SVG in real-time as you type. Perfect for quickly visualizing dependency graphs, flowcharts, and state machines.",
+      "url": "https://tools.simonwillison.net/dot",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "dot",
+        "graphviz",
+        "svg"
+      ],
+      "categories": [
+        "developer"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "terminal-to-html",
+      "name": "Terminal to HTML",
+      "summary": "Convert ANSI terminal output with colors and styling to clean HTML. Share command output, error logs, or terminal recordings on the web.",
+      "url": "https://tools.simonwillison.net/terminal-to-html",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "terminal",
+        "html",
+        "ansi"
+      ],
+      "categories": [
+        "developer"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "json-schema-builder",
+      "name": "JSON schema builder",
+      "summary": "Visually design and build JSON schemas with a structured form interface. Generates the schema as you add properties, types, and constraints.",
+      "url": "https://tools.simonwillison.net/json-schema-builder",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "json",
+        "schema",
+        "builder"
+      ],
+      "categories": [
+        "developer"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "escape-entities",
+      "name": "Escape Entities",
+      "summary": "HTML entity encoder and decoder. Quickly escape or unescape special HTML characters for safe embedding in web pages.",
+      "url": "https://tools.simonwillison.net/escape-entities",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "html",
+        "entities",
+        "escape"
+      ],
+      "categories": [
+        "developer"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "zip-wheel-explorer",
+      "name": "Zip/Wheel explorer",
+      "summary": "View the contents of Python wheel and ZIP archive files in a browsable interface. Inspect package structure without extracting locally.",
+      "url": "https://tools.simonwillison.net/zip-wheel-explorer",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "zip",
+        "wheel",
+        "python"
+      ],
+      "categories": [
+        "developer"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "xml-validator",
+      "name": "XML Validator",
+      "summary": "Validate XML documents for well-formedness and report parse errors with line numbers. A quick sanity check for any XML file.",
+      "url": "https://tools.simonwillison.net/xml-validator",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "xml",
+        "validate",
+        "parse"
+      ],
+      "categories": [
+        "developer"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "incomplete-json-printer",
+      "name": "Incomplete JSON printer",
+      "summary": "Pretty-print partial or incomplete JSON documents. Perfect for viewing streaming JSON responses from LLMs and APIs that arrive in chunks.",
+      "url": "https://tools.simonwillison.net/incomplete-json-printer",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "json",
+        "format",
+        "partial"
+      ],
+      "categories": [
+        "developer"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "pomodoro",
+      "name": "Pomodoro Timer",
+      "summary": "Full-featured productivity timer with configurable intervals, session goals, history tracking, and JSON export. Works entirely offline.",
+      "url": "https://tools.simonwillison.net/pomodoro",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "pomodoro",
+        "timer",
+        "productivity"
+      ],
+      "categories": [
+        "productivity"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "annotated-presentations",
+      "name": "Annotated Presentations",
+      "summary": "Create accessible slide presentations with alt text on images, Markdown speaker notes, and built-in OCR for scanned slide decks.",
+      "url": "https://tools.simonwillison.net/annotated-presentations",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "slides",
+        "presentation",
+        "a11y"
+      ],
+      "categories": [
+        "productivity"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "ffmpeg-crop",
+      "name": "FFmpeg crop helper",
+      "summary": "Load a video frame and draw a crop region interactively. Instantly generates the exact FFmpeg command for that crop - no more trial and error.",
+      "url": "https://tools.simonwillison.net/ffmpeg-crop",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "video",
+        "ffmpeg",
+        "crop",
+        "command"
+      ],
+      "categories": [
+        "audio-video"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "mp3-inspector",
+      "name": "MP3 Inspector",
+      "summary": "Extract ID3 metadata from MP3 files - title, artist, album, genre, cover art, and more. Useful for auditing or cleaning up music collections.",
+      "url": "https://tools.simonwillison.net/mp3-inspector",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "mp3",
+        "metadata",
+        "id3"
+      ],
+      "categories": [
+        "audio-video"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "speech-synthesis",
+      "name": "Speech Synthesis Tester",
+      "summary": "Test the Web Speech API text-to-speech engine with different voices, rates, and pitches. See what voices your browser supports natively.",
+      "url": "https://tools.simonwillison.net/speech-synthesis",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "speech",
+        "tts",
+        "web-speech"
+      ],
+      "categories": [
+        "audio-video"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "unix-timestamp",
+      "name": "Timestamp Converter",
+      "summary": "Convert Unix timestamps to human-readable dates and vice versa. Supports millisecond timestamps and multiple timezone displays.",
+      "url": "https://tools.simonwillison.net/unix-timestamp",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "timestamp",
+        "unix",
+        "date",
+        "convert"
+      ],
+      "categories": [
+        "utilities"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "timezones",
+      "name": "Timezones",
+      "summary": "Compare times across multiple timezones simultaneously on an interactive world clock. Indispensable for scheduling across timezones.",
+      "url": "https://tools.simonwillison.net/timezones",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "timezone",
+        "time",
+        "compare"
+      ],
+      "categories": [
+        "utilities"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "encrypt",
+      "name": "Encrypt / decrypt message",
+      "summary": "Securely encrypt messages with a passphrase for sharing. Everything happens client-side - no server ever sees your plaintext or key.",
+      "url": "https://tools.simonwillison.net/encrypt",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "encrypt",
+        "decrypt",
+        "crypto"
+      ],
+      "categories": [
+        "utilities"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "qr",
+      "name": "QR Code Decoder",
+      "summary": "Decode QR codes from an uploaded image or directly from your camera. Useful for scanning codes without a phone or proprietary app.",
+      "url": "https://tools.simonwillison.net/qr",
+      "source_url": "https://github.com/simonw/tools",
+      "authors": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "github": "https://github.com/simonw"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "qr",
+        "decode",
+        "camera"
+      ],
+      "categories": [
+        "utilities"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://simonwillison.net/2025/Dec/10/html-tools/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "squoosh",
+      "name": "Squoosh",
+      "summary": "Image compression tool from GoogleChromeLabs. Compare before/after, adjust quality, and convert formats locally in the browser.",
+      "url": "https://squoosh.app",
+      "source_url": "https://github.com/GoogleChromeLabs/squoosh",
+      "authors": [
+        {
+          "name": "Google Chrome Labs",
+          "url": "https://github.com/GoogleChromeLabs",
+          "github": "https://github.com/GoogleChromeLabs"
+        }
+      ],
+      "license": "Apache-2.0",
+      "tags": [
+        "image-compression",
+        "webp",
+        "avif",
+        "png",
+        "jpeg"
+      ],
+      "categories": [
+        "images"
+      ],
+      "runtime": {
+        "single_file": false,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "svgomg",
+      "name": "SVGOMG",
+      "summary": "Powered by SVGO, this client-side SVG optimizer lets you visually inspect and minify SVG markup with a rich settings panel.",
+      "url": "https://svgomg.net",
+      "source_url": "https://github.com/jakearchibald/svgomg",
+      "authors": [
+        {
+          "name": "Jake Archibald",
+          "url": "https://jakearchibald.com",
+          "github": "https://github.com/jakearchibald"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "svg",
+        "minifier",
+        "optimizer",
+        "vector"
+      ],
+      "categories": [
+        "images"
+      ],
+      "runtime": {
+        "single_file": false,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "jspaint",
+      "name": "JS Paint",
+      "summary": "A pixel-perfect web remake of classic MS Paint with extras: themes, unlimited undo, transparent images, and animated GIF export.",
+      "url": "https://jspaint.app",
+      "source_url": "https://github.com/1j01/jspaint",
+      "authors": [
+        {
+          "name": "Isaiah Odhner",
+          "url": "https://isaiahodhner.io",
+          "github": "https://github.com/1j01"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "paint",
+        "drawing",
+        "pixel-art",
+        "ms-paint"
+      ],
+      "categories": [
+        "images"
+      ],
+      "runtime": {
+        "single_file": false,
+        "offline": "partial",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "js-image-carver",
+      "name": "JS IMAGE CARVER",
+      "summary": "Content-aware image resizer and object remover based on the Seam Carving algorithm. Runs entirely in the browser.",
+      "url": "https://trekhleb.dev/js-image-carver/",
+      "source_url": "https://github.com/trekhleb/js-image-carver",
+      "authors": [
+        {
+          "name": "Oleksii Trekhleb",
+          "url": "https://trekhleb.dev",
+          "github": "https://github.com/trekhleb"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "image-resize",
+        "seam-carving",
+        "content-aware",
+        "algorithm"
+      ],
+      "categories": [
+        "images"
+      ],
+      "runtime": {
+        "single_file": false,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "cropperjs",
+      "name": "Cropper.js",
+      "summary": "A JavaScript image cropper demo that lets you crop, rotate, zoom, and export images locally in the browser.",
+      "url": "https://fengyuanchen.github.io/cropperjs/",
+      "source_url": "https://github.com/fengyuanchen/cropperjs",
+      "authors": [
+        {
+          "name": "Chen Fengyuan",
+          "url": "https://chenfengyuan.com",
+          "github": "https://github.com/fengyuanchen"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "image-crop",
+        "image-editor",
+        "canvas"
+      ],
+      "categories": [
+        "images"
+      ],
+      "runtime": {
+        "single_file": false,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "img-to-ascii",
+      "name": "imgToAscii",
+      "summary": "Convert images to ASCII art in the browser. Supports color output and resizing with a simple JavaScript API.",
+      "url": "https://victorqribeiro.github.io/imgToAscii/",
+      "source_url": "https://github.com/victorqribeiro/imgToAscii",
+      "authors": [
+        {
+          "name": "Victor Ribeiro",
+          "url": "https://victorqribeiro.github.io",
+          "github": "https://github.com/victorqribeiro"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "ascii-art",
+        "image",
+        "converter",
+        "text"
+      ],
+      "categories": [
+        "images",
+        "text-data"
+      ],
+      "runtime": {
+        "single_file": false,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "json-crack",
+      "name": "JSON Crack",
+      "summary": "Visualize JSON, YAML, CSV, and XML into interactive graphs and trees. Data is processed only on your device.",
+      "url": "https://jsoncrack.com",
+      "source_url": "https://github.com/AykutSarac/jsoncrack.com",
+      "authors": [
+        {
+          "name": "Aykut Sarac",
+          "url": "https://github.com/AykutSarac",
+          "github": "https://github.com/AykutSarac"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "json",
+        "visualizer",
+        "graph",
+        "tree-view",
+        "data"
+      ],
+      "categories": [
+        "text-data"
+      ],
+      "runtime": {
+        "single_file": false,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "flexbox-froggy",
+      "name": "Flexbox Froggy",
+      "summary": "A game for learning CSS flexbox. Write CSS to guide a frog to its lilypad through 24 interactive levels.",
+      "url": "https://flexboxfroggy.com",
+      "source_url": "https://github.com/thomaspark/flexboxfroggy",
+      "authors": [
+        {
+          "name": "Thomas Park",
+          "url": "https://thomaspark.co",
+          "github": "https://github.com/thomaspark"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "css",
+        "flexbox",
+        "game",
+        "learning",
+        "education"
+      ],
+      "categories": [
+        "developer",
+        "education"
+      ],
+      "runtime": {
+        "single_file": false,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "excalidraw",
+      "name": "Excalidraw",
+      "summary": "A virtual whiteboard for sketching hand-drawn like diagrams. End-to-end encrypted, works offline, and supports collaboration.",
+      "url": "https://excalidraw.com",
+      "source_url": "https://github.com/excalidraw/excalidraw",
+      "authors": [
+        {
+          "name": "Excalidraw Team",
+          "url": "https://excalidraw.com",
+          "github": "https://github.com/excalidraw"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "whiteboard",
+        "sketch",
+        "diagram",
+        "collaboration"
+      ],
+      "categories": [
+        "productivity"
+      ],
+      "runtime": {
+        "single_file": false,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "signature-pad",
+      "name": "Signature Pad",
+      "summary": "A smooth signature drawing demo using HTML5 canvas with variable width Bezier curves. Export to PNG, JPEG, or SVG.",
+      "url": "https://szimek.github.io/signature_pad/",
+      "source_url": "https://github.com/szimek/signature_pad",
+      "authors": [
+        {
+          "name": "Szymon Nowak",
+          "url": "https://szimek.github.io",
+          "github": "https://github.com/szimek"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "signature",
+        "drawing",
+        "canvas",
+        "export"
+      ],
+      "categories": [
+        "utilities",
+        "images"
+      ],
+      "runtime": {
+        "single_file": false,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "webutils",
+      "name": "WebUtils",
+      "summary": "999+ single-file, offline-first web tools covering JSON formatting, regex testing, image compression, QR codes, base64, color pickers, and more. Zero build, privacy-first, MIT licensed.",
+      "url": "https://tools.realtime-ai.chat",
+      "source_url": "https://github.com/chicogong/html-tools",
+      "authors": [
+        {
+          "name": "chicogong",
+          "url": "https://github.com/chicogong",
+          "github": "https://github.com/chicogong"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "all-in-one",
+        "developer-tools",
+        "json",
+        "regex",
+        "base64",
+        "image-tools",
+        "qr-generator",
+        "color-picker",
+        "offline-first"
+      ],
+      "categories": [
+        "developer",
+        "utilities",
+        "images",
+        "text-data"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "awfice",
+      "name": "Awfice",
+      "summary": "The world's smallest office suite - a word processor, spreadsheet, drawing app, presentation maker, and code editor, each under 1KB of JavaScript. Single-file HTML that runs as data: URLs.",
+      "url": "https://github.com/zserge/awfice",
+      "source_url": "https://github.com/zserge/awfice",
+      "authors": [
+        {
+          "name": "Serge Zaitsev",
+          "url": "https://zserge.com",
+          "github": "https://github.com/zserge"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "office",
+        "word-processor",
+        "spreadsheet",
+        "presentation",
+        "drawing",
+        "code-editor",
+        "minimal",
+        "single-file",
+        "ephemeral"
+      ],
+      "categories": [
+        "productivity",
+        "utilities"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "markdeep",
+      "name": "Markdeep",
+      "summary": "Turn any markdown file into a self-contained HTML document by adding one line at the bottom. Supports diagrams, LaTeX equations, calendars, citations, and works offline with no server needed.",
+      "url": "https://casual-effects.com/markdeep/",
+      "source_url": "https://github.com/morgan3d/markdeep",
+      "authors": [
+        {
+          "name": "Morgan McGuire",
+          "url": "https://casual-effects.com",
+          "github": "https://github.com/morgan3d"
+        }
+      ],
+      "license": "BSD-2-Clause",
+      "tags": [
+        "markdown",
+        "documentation",
+        "diagrams",
+        "latex",
+        "equations",
+        "single-file",
+        "offline",
+        "static-site"
+      ],
+      "categories": [
+        "productivity",
+        "developer"
+      ],
+      "runtime": {
+        "single_file": false,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "networking-toolbox",
+      "name": "Networking Toolbox",
+      "summary": "100+ offline-first networking tools for sysadmins: subnet calculator, MAC lookup, port scanner, DNS tools, IP tools, and more. Mobile optimized with dark/light themes.",
+      "url": "https://networking-toolbox.as93.net",
+      "source_url": "https://github.com/Lissy93/networking-toolbox",
+      "authors": [
+        {
+          "name": "Alicia Sykes",
+          "url": "https://aliciasykes.com",
+          "github": "https://github.com/Lissy93"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "networking",
+        "subnet",
+        "dns",
+        "ip",
+        "mac-address",
+        "port",
+        "sysadmin",
+        "offline-first"
+      ],
+      "categories": [
+        "utilities",
+        "developer"
+      ],
+      "runtime": {
+        "single_file": false,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "dev-toolkit",
+      "name": "Dev Toolkit",
+      "summary": "9-in-1 browser developer toolkit in a single HTML file: JSON formatter, Base64/URL/HTML encoder, JWT decoder, regex tester, markdown preview, diff checker, and more. Zero dependencies.",
+      "url": "https://tachodril.github.io/dev-toolkit/",
+      "source_url": "https://github.com/tachodril/dev-toolkit",
+      "authors": [
+        {
+          "name": "tachodril",
+          "url": "https://github.com/tachodril",
+          "github": "https://github.com/tachodril"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "json",
+        "base64",
+        "jwt",
+        "regex",
+        "markdown",
+        "diff",
+        "developer-tools",
+        "single-file"
+      ],
+      "categories": [
+        "developer",
+        "utilities"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "partial",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "textarea-my",
+      "name": "Textarea.my",
+      "summary": "Minimalist text editor that lives entirely in the URL hash with deflate compression. Share notes by URL, supports markdown, custom CSS, dark mode, and QR code export. PWA offline.",
+      "url": "https://textarea.my",
+      "source_url": "https://github.com/antonmedv/textarea",
+      "authors": [
+        {
+          "name": "Anton Medvedev",
+          "url": "https://github.com/antonmedv",
+          "github": "https://github.com/antonmedv"
+        }
+      ],
+      "license": "BSD-2-Clause",
+      "tags": [
+        "text-editor",
+        "notes",
+        "url-hash",
+        "compression",
+        "markdown",
+        "pwa",
+        "qr",
+        "single-file"
+      ],
+      "categories": [
+        "productivity",
+        "utilities"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "conway-game-of-life",
+      "name": "Conway's Game of Life",
+      "summary": "Interactive single-file HTML implementation of Conway's Game of Life with draw/erase, shape library (Glider, Gosper Gun, etc.), speed control, zoom, and generation counters.",
+      "url": "https://github.com/Tawfiqh/Conway.html",
+      "source_url": "https://github.com/Tawfiqh/Conway.html",
+      "authors": [
+        {
+          "name": "Tawfiqh",
+          "url": "https://github.com/Tawfiqh",
+          "github": "https://github.com/Tawfiqh"
+        }
+      ],
+      "license": null,
+      "tags": [
+        "game-of-life",
+        "cellular-automata",
+        "simulation",
+        "canvas",
+        "interactive",
+        "single-file"
+      ],
+      "categories": [
+        "utilities"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "singlefile",
+      "name": "SingleFile",
+      "summary": "Browser extension and CLI tool to save a complete web page (CSS, images, fonts, frames) as a single HTML file. Supports auto-save, annotations, and cloud uploads.",
+      "url": "https://github.com/gildas-lormeau/SingleFile",
+      "source_url": "https://github.com/gildas-lormeau/SingleFile",
+      "authors": [
+        {
+          "name": "Gildas Lormeau",
+          "url": "https://github.com/gildas-lormeau",
+          "github": "https://github.com/gildas-lormeau"
+        }
+      ],
+      "license": "AGPL-3.0",
+      "tags": [
+        "web-archiving",
+        "save-page",
+        "html",
+        "offline",
+        "browser-extension",
+        "cli",
+        "archiver"
+      ],
+      "categories": [
+        "utilities",
+        "productivity"
+      ],
+      "runtime": {
+        "single_file": false,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "kapur-markdown-editor",
+      "name": "Kapur",
+      "summary": "Lightweight Markdown editor with syntax highlighting and instant preview. Single HTML file, zero dependencies, works offline. Supports GFM, file open/save, and HTML export.",
+      "url": "https://github.com/rioastamal/kapur",
+      "source_url": "https://github.com/rioastamal/kapur",
+      "authors": [
+        {
+          "name": "Rio Astamal",
+          "url": "https://github.com/rioastamal",
+          "github": "https://github.com/rioastamal"
+        }
+      ],
+      "license": null,
+      "tags": [
+        "markdown",
+        "editor",
+        "preview",
+        "syntax-highlighting",
+        "single-file",
+        "offline"
+      ],
+      "categories": [
+        "productivity",
+        "developer"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "hex-viewer",
+      "name": "Hex Viewer",
+      "summary": "Browser-based hex viewer from the WebUtils collection. View file contents as hexadecimal with ASCII side panel. Works fully offline, drag-and-drop support.",
+      "url": "https://tools.realtime-ai.chat/tools/dev/hex-viewer.html",
+      "source_url": "https://github.com/chicogong/html-tools/blob/master/tools/dev/hex-viewer.html",
+      "authors": [
+        {
+          "name": "chicogong",
+          "url": "https://github.com/chicogong",
+          "github": "https://github.com/chicogong"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "hex",
+        "viewer",
+        "binary",
+        "file-inspection",
+        "offline"
+      ],
+      "categories": [
+        "developer",
+        "utilities"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "retro-ball-breakout",
+      "name": "Retro Ball",
+      "summary": "Minimal Breakout-style arcade game in a single HTML file. Pure HTML, CSS, JS, runs completely offline. Responsive desktop and mobile, ball physics with paddle control.",
+      "url": "https://99fk.github.io/retro-ball",
+      "source_url": "https://github.com/99fk/retro-ball",
+      "authors": [
+        {
+          "name": "99fk",
+          "url": "https://github.com/99fk",
+          "github": "https://github.com/99fk"
+        }
+      ],
+      "license": null,
+      "tags": [
+        "game",
+        "breakout",
+        "arcade",
+        "retro",
+        "canvas",
+        "single-file",
+        "offline"
+      ],
+      "categories": [
+        "utilities"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "markdown-previewer",
+      "name": "Acme Markdown Previewer",
+      "summary": "RTL-friendly single-file Markdown previewer with syntax highlighting, autosave, multiple documents, share by link, PDF download, dark theme, and PWA offline support.",
+      "url": "https://github.com/alireza-malek/markdown-previewer",
+      "source_url": "https://github.com/alireza-malek/markdown-previewer",
+      "authors": [
+        {
+          "name": "Alireza Malek",
+          "url": "https://github.com/alireza-malek",
+          "github": "https://github.com/alireza-malek"
+        }
+      ],
+      "license": null,
+      "tags": [
+        "markdown",
+        "preview",
+        "editor",
+        "rtl",
+        "pwa",
+        "offline",
+        "syntax-highlight",
+        "single-file"
+      ],
+      "categories": [
+        "productivity",
+        "developer"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "edge-md-viewer",
+      "name": "EdgeMD Viewer",
+      "summary": "Distraction-free Markdown viewer and editor. Single HTML file, zero dependencies, works offline. Drag-and-drop files, edit and save back, export as standalone HTML.",
+      "url": "https://md-viewer-edge.web.app/",
+      "source_url": "https://github.com/0xedgelessblade/edge-md-viewer",
+      "authors": [
+        {
+          "name": "0xedgelessblade",
+          "url": "https://github.com/0xedgelessblade",
+          "github": "https://github.com/0xedgelessblade"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "markdown",
+        "viewer",
+        "editor",
+        "drag-drop",
+        "offline",
+        "export",
+        "single-file"
+      ],
+      "categories": [
+        "productivity"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "ultraformat",
+      "name": "UltraFormat",
+      "summary": "Privacy-first developer toolkit: JSON formatter, diff checker, Base64 codec, code beautifier, regex tester, JWT decoder, color converter, hash generator, UUID generator, and more. 100% client-side.",
+      "url": "https://ultraformat.dev",
+      "source_url": "https://github.com/bocan/ultraformat",
+      "authors": [
+        {
+          "name": "bocan",
+          "url": "https://github.com/bocan",
+          "github": "https://github.com/bocan"
+        }
+      ],
+      "license": null,
+      "tags": [
+        "json",
+        "base64",
+        "jwt",
+        "regex",
+        "diff",
+        "color",
+        "hash",
+        "uuid",
+        "lorem-ipsum",
+        "developer-tools"
+      ],
+      "categories": [
+        "developer",
+        "utilities"
+      ],
+      "runtime": {
+        "single_file": false,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "snake-game-single-file",
+      "name": "HTML Snake Game",
+      "summary": "Single-file HTML snake game with keyboard and touchscreen support. Pure vanilla JavaScript, no dependencies, works completely offline. Editable variables for customization.",
+      "url": "https://mpaterakis.github.io/html-snakeGame/snakeGame.html",
+      "source_url": "https://github.com/mpaterakis/html-snakeGame",
+      "authors": [
+        {
+          "name": "mpaterakis",
+          "url": "https://github.com/mpaterakis",
+          "github": "https://github.com/mpaterakis"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "snake-game",
+        "game",
+        "canvas",
+        "touchscreen",
+        "keyboard",
+        "single-file",
+        "offline"
+      ],
+      "categories": [
+        "utilities"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "phrame-pwa",
+      "name": "Phrame",
+      "summary": "Simple PWA photo frame tool. Open a photo file in the browser, displayed without distraction. Single HTML file, works offline, installable as PWA.",
+      "url": "https://phrame.isthe.link",
+      "source_url": "https://github.com/remy/phrame",
+      "authors": [
+        {
+          "name": "Remy Sharp",
+          "url": "https://remysharp.com",
+          "github": "https://github.com/remy"
+        }
+      ],
+      "license": null,
+      "tags": [
+        "photo",
+        "frame",
+        "pwa",
+        "offline",
+        "single-file",
+        "display"
+      ],
+      "categories": [
+        "images",
+        "utilities"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "video-toolkit",
+      "name": "Video Toolkit",
+      "summary": "Fast browser-based video tools via ffmpeg.wasm. Shrink to target size, convert codecs, remux, extract audio, trim, thumbnails, GIFs. Files stay on your machine.",
+      "url": "https://lachlanallison.github.io/video-toolkit/",
+      "source_url": "https://github.com/lachlanallison/video-toolkit",
+      "authors": [
+        {
+          "name": "Lachlan Allison",
+          "url": "https://lachlanallison.com/",
+          "github": "https://github.com/lachlanallison"
+        }
+      ],
+      "license": null,
+      "tags": [
+        "video",
+        "ffmpeg",
+        "converter",
+        "gif"
+      ],
+      "categories": [
+        "audio-video"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "partial",
+        "needs_network": true
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://lachlanallison.com/projects/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "map-a-route",
+      "name": "Map a Route",
+      "summary": "Route planner for runners and cyclists. Click to drop points, snap to real paths, see elevation, export GPX. No account, no server.",
+      "url": "https://lachlanallison.github.io/map-a-route/",
+      "source_url": "https://github.com/lachlanallison/map-a-route",
+      "authors": [
+        {
+          "name": "Lachlan Allison",
+          "url": "https://lachlanallison.com/",
+          "github": "https://github.com/lachlanallison"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "maps",
+        "route-planning",
+        "gpx",
+        "elevation"
+      ],
+      "categories": [
+        "utilities"
+      ],
+      "runtime": {
+        "single_file": false,
+        "offline": "no",
+        "needs_network": true
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://lachlanallison.com/projects/"
+      ],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "cron-builder",
+      "name": "Cron Builder",
+      "summary": "Visual cron expression builder with 6 export formats: crontab, launchd, systemd, GitHub Actions, Kubernetes CronJob, node-cron. Single HTML file, no backend.",
+      "url": "https://cron.parallelromb.dev",
+      "source_url": "https://github.com/parallelromb/cron-builder",
+      "authors": [
+        {
+          "name": "Sri (parallelromb)",
+          "url": "https://parallelromb.dev",
+          "github": "https://github.com/parallelromb"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "cron",
+        "scheduler",
+        "builder",
+        "crontab"
+      ],
+      "categories": [
+        "developer"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "jwt-debugger",
+      "name": "JWT Debugger",
+      "summary": "Decode JWT tokens entirely in the browser. Inspect header, payload, and signature claims. Never sends your token anywhere - 100% client-side.",
+      "url": "https://sen.ltd/portfolio/jwt-debugger/",
+      "source_url": "https://github.com/sen-ltd/jwt-debugger",
+      "authors": [
+        {
+          "name": "SEN Ltd",
+          "url": "https://sen.ltd",
+          "github": "https://github.com/sen-ltd"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "jwt",
+        "token",
+        "debugger",
+        "decode"
+      ],
+      "categories": [
+        "developer"
+      ],
+      "runtime": {
+        "single_file": false,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "svg-patterns",
+      "name": "Pattern Monster",
+      "summary": "Create seamless SVG patterns for website backgrounds, headers, and design. 320+ patterns with customizable colors, stroke width, and angle.",
+      "url": "https://pattern.monster",
+      "source_url": "https://github.com/catchspider2002/svelte-svg-patterns",
+      "authors": [
+        {
+          "name": "catchspider2002",
+          "url": "https://github.com/catchspider2002",
+          "github": "https://github.com/catchspider2002"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "svg",
+        "patterns",
+        "background",
+        "design"
+      ],
+      "categories": [
+        "images"
+      ],
+      "runtime": {
+        "single_file": false,
+        "offline": "partial",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "webcam-tester",
+      "name": "HTML5 Webcam Tester",
+      "summary": "Test your webcam in the browser. View live feed, capture photos, decode QR codes, and switch cameras. All processing is local.",
+      "url": "https://tetunori.github.io/HTML5WebcamTester/",
+      "source_url": "https://github.com/tetunori/HTML5WebcamTester",
+      "authors": [
+        {
+          "name": "Tetsunori Nakayama",
+          "url": "https://github.com/tetunori",
+          "github": "https://github.com/tetunori"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "webcam",
+        "camera",
+        "test",
+        "capture"
+      ],
+      "categories": [
+        "utilities"
+      ],
+      "runtime": {
+        "single_file": false,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    },
+    {
+      "id": "uuid-generator",
+      "name": "UUID Tools",
+      "summary": "Online UUID/GUID generator supporting v1 and v4. Bulk generation, UUID decoder, API, and open source. Runs client-side.",
+      "url": "https://www.uuidtools.com",
+      "source_url": "https://github.com/aarreedd/uuidtools.com",
+      "authors": [
+        {
+          "name": "aarreedd",
+          "url": "https://github.com/aarreedd",
+          "github": "https://github.com/aarreedd"
+        }
+      ],
+      "license": null,
+      "tags": [
+        "uuid",
+        "guid",
+        "generator",
+        "identifier"
+      ],
+      "categories": [
+        "developer"
+      ],
+      "runtime": {
+        "single_file": false,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [],
+      "added": "2026-05-14"
+    }
+  ]
+}

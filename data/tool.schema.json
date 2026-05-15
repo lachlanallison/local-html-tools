@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://localhtmltools.lachlanallison.com/schema/tool.json",
+  "title": "Local HTML Tool listing",
+  "type": "object",
+  "required": ["id", "name", "summary", "url", "source_url", "authors"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "Stable slug for URLs and JSON (kebab-case)."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Display name of the tool or collection."
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 280,
+      "description": "One or two sentences for cards and meta description."
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Primary entry: hosted page users open (https preferred)."
+    },
+    "source_url": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "description": "Repository, gist, or folder where the HTML/source lives."
+    },
+    "authors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string", "description": "Person or team name." },
+          "url": {
+            "type": ["string", "null"],
+            "format": "uri",
+            "description": "Homepage, profile, or project page."
+          },
+          "github": {
+            "type": ["string", "null"],
+            "pattern": "^https://github\\.com/[A-Za-z0-9_.-]+(?:/[A-Za-z0-9_.-]+)?/?$",
+            "description": "GitHub profile or org URL."
+          }
+        }
+      }
+    },
+    "license": {
+      "type": ["string", "null"],
+      "description": "SPDX id (e.g. MIT) or short human-readable string."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Fine-grained labels (e.g. png, sessions, pypi)."
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "images",
+          "text-data",
+          "developer",
+          "productivity",
+          "education",
+          "audio-video",
+          "utilities",
+          "other"
+        ]
+      },
+      "description": "Broad buckets for filters."
+    },
+    "runtime": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "single_file": {
+          "type": "boolean",
+          "description": "Designed as one HTML file (inline CSS/JS)."
+        },
+        "offline": {
+          "type": "string",
+          "enum": ["yes", "partial", "no"],
+          "description": "yes = works from file:// or air-gapped; partial = needs CDN/network; no = requires server/API."
+        },
+        "needs_network": {
+          "type": "boolean",
+          "description": "True if typical use calls external APIs (e.g. Bluesky, PyPI)."
+        }
+      }
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["tool", "collection"],
+      "default": "tool",
+      "description": "collection = curated bundle or gallery; still listed like a tool."
+    },
+    "reference_urls": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" },
+      "description": "Blog posts, HN threads, or announcements (citations)."
+    },
+    "added": {
+      "type": "string",
+      "format": "date",
+      "description": "Date first listed (YYYY-MM-DD)."
+    }
+  }
+}

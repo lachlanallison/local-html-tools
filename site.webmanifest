@@ -1,0 +1,16 @@
+{
+  "name": "Local HTML Tools",
+  "short_name": "Local HTML Tools",
+  "description": "A curated directory of browser-first, offline-friendly HTML utilities.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a222d",
+  "theme_color": "#1a222d",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

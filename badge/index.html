@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Embed badge - Local HTML Tools</title>
+    <script>
+      (function () {
+        var mode = "auto";
+        try {
+          var saved = localStorage.getItem("lht-theme");
+          if (["auto", "light", "dark"].indexOf(saved) !== -1) mode = saved;
+        } catch (error) {}
+        var theme = mode === "auto"
+          ? (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark")
+          : mode;
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    <link id="theme-css" rel="stylesheet" href="../css/themes/site.css" data-base="../css/themes/" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <style>
+      .panel {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 1rem 1.15rem;
+        margin: 1rem 0;
+      }
+      pre,
+      code {
+        font-family: var(--mono);
+        font-size: 0.85rem;
+      }
+      pre {
+        overflow: auto;
+        margin: 0.5rem 0 0;
+        padding: 0.75rem;
+        background: var(--bg);
+        border-radius: 6px;
+        border: 1px solid var(--border);
+      }
+      .preview {
+        display: inline-block;
+        padding: 1rem;
+        background: var(--bg);
+        border-radius: var(--radius);
+        border: 1px dashed var(--border);
+      }
+      .snippet-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+      .copy-button {
+        border: 0;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site">
+        <div class="header-top">
+          <a href="../" class="site-logo" style="text-decoration:none;color:inherit">
+            <img src="../favicon.svg" alt="" />
+            <span class="site-logo-wordmark">LOCAL HTML TOOLS</span>
+          </a>
+          <label class="theme-picker" for="theme-switcher">
+            <span class="sr-only">Theme</span>
+            <select id="theme-switcher" class="filter">
+              <option value="auto" selected>&#9680;&nbsp;&nbsp;Auto</option>
+              <option value="light">&#9788;&nbsp;&nbsp;Light</option>
+              <option value="dark">&#9790;&nbsp;&nbsp;Dark</option>
+            </select>
+          </label>
+        </div>
+        <p class="lede">Link back to the directory from your tool's page or README.</p>
+      </header>
+
+      <main>
+        <p>
+          <a href="../">&larr; Back to directory</a>
+        </p>
+
+        <section class="panel">
+          <h2 class="summary" style="margin-top: 0">Get your badge:</h2>
+          <div class="preview">
+            <a href="https://localhtmltools.lachlanallison.com/" target="_blank" rel="noopener" title="Local HTML Tools - curated directory">
+              <img src="badge.svg" height="56" alt="Listed on Local HTML Tools" />
+            </a>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="snippet-head">
+            <div>
+              <h2 class="summary" style="margin: 0">HTML snippet (dofollow backlink)</h2>
+              <p class="summary" style="margin: 0.2rem 0 0">Paste this into your site's HTML.</p>
+            </div>
+            <button class="btn btn-secondary btn-small copy-button" type="button" data-copy-target="html-snippet">Copy</button>
+          </div>
+          <pre><code id="html-snippet">&lt;a href="https://localhtmltools.lachlanallison.com/" target="_blank" rel="noopener"&gt;
+  &lt;img src="https://localhtmltools.lachlanallison.com/badge/badge.svg" height="56" alt="Listed on Local HTML Tools" /&gt;
+&lt;/a&gt;</code></pre>
+        </section>
+
+        <section class="panel">
+          <div class="snippet-head">
+            <h2 class="summary" style="margin: 0">Markdown (README)</h2>
+            <button class="btn btn-secondary btn-small copy-button" type="button" data-copy-target="markdown-snippet">Copy</button>
+          </div>
+          <pre><code id="markdown-snippet">[![Listed on Local HTML Tools](https://localhtmltools.lachlanallison.com/badge/badge.svg)](https://localhtmltools.lachlanallison.com/)</code></pre>
+        </section>
+
+
+      </main>
+
+      <footer class="site">
+        <p>
+          Data lives in <code>data/tools.json</code>. See <a href="../contributing.html">how to contribute</a> (and <code>CONTRIBUTING.md</code> in the repo).
+        </p>
+        <p>Inspired by the spirit of local-first, inspectable HTML - see e.g. Simon Willison's <a href="https://simonwillison.net/2025/Dec/10/html-tools/">HTML tools</a> write-up.</p>
+        <p>Built by <a href="https://lachlanallison.com/">Lachlan</a>.</p>
+      </footer>
+    </div>
+    <script src="../js/theme.js" defer></script>
+    <script>
+      document.querySelectorAll("[data-copy-target]").forEach((button) => {
+        button.addEventListener("click", async () => {
+          const target = document.getElementById(button.dataset.copyTarget);
+          if (!target) return;
+          const original = button.textContent;
+          try {
+            await navigator.clipboard.writeText(target.textContent);
+            button.textContent = "Copied";
+          } catch (error) {
+            button.textContent = "Select text";
+          }
+          window.setTimeout(() => {
+            button.textContent = original;
+          }, 1600);
+        });
+      });
+    </script>
+  </body>
+</html>
+
+
+
+

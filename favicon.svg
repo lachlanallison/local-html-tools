@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Local HTML Tools</title>
+  <desc id="desc">A minimal square browser-window logo with HTML brackets.</desc>
+  <defs>
+    <linearGradient id="code" x1="18" y1="25" x2="46" y2="42" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="52" height="52" rx="13" fill="#08080c" stroke="#818cf8" stroke-width="4"/>
+  <path d="M10 24h44" stroke="#818cf8" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="17" cy="16.5" r="2.3" fill="#818cf8"/>
+  <circle cx="25" cy="16.5" r="2.3" fill="#818cf8" opacity=".65"/>
+  <path d="M25 34 19 40l6 6M39 34l6 6-6 6" fill="none" stroke="url(#code)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M34.5 32.5 29.5 47.5" stroke="#eef3fb" stroke-width="3.6" stroke-linecap="round"/>
+</svg>

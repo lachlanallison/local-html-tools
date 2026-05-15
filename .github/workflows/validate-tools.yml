@@ -1,0 +1,29 @@
+name: Validate tools.json
+
+on:
+  pull_request:
+    paths:
+      - "data/tools.json"
+      - "data/tool.schema.json"
+      - "scripts/validate_tools.py"
+      - "scripts/generate_pages.py"
+      - ".github/workflows/validate-tools.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install validators
+        run: pip install -r scripts/requirements-ci.txt
+
+      - name: Validate data/tools.json
+        run: python scripts/validate_tools.py
+
+      - name: Generate tool pages
+        run: python scripts/generate_pages.py

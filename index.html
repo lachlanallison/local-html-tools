@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Local HTML Tools - Browser-First, Offline-Friendly Utilities</title>
+    <meta name="description" content="A curated directory of browser-first tools where the browser does the work - especially single-file and offline-friendly HTML utilities with limited network or API dependence." />
+    <meta name="keywords" content="browser tools, offline tools, single-file HTML, local-first, privacy-focused, web utilities, developer tools" />
+    <meta name="author" content="Lachlan Allison" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://localhtmltools.lachlanallison.com/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://localhtmltools.lachlanallison.com/" />
+    <meta property="og:title" content="Local HTML Tools - Browser-First, Offline-Friendly Utilities" />
+    <meta property="og:description" content="A curated directory of browser-first tools where the browser does the work - especially single-file and offline-friendly HTML utilities with limited network or API dependence." />
+    <meta property="og:image" content="https://localhtmltools.lachlanallison.com/assets/og-cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Local HTML Tools" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://localhtmltools.lachlanallison.com/" />
+    <meta name="twitter:title" content="Local HTML Tools - Browser-First, Offline-Friendly Utilities" />
+    <meta name="twitter:description" content="A curated directory of browser-first tools where the browser does the work - especially single-file and offline-friendly HTML utilities with limited network or API dependence." />
+    <meta name="twitter:image" content="https://localhtmltools.lachlanallison.com/assets/og-cover.png" />
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#1a222d" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Local HTML Tools",
+      "url": "https://localhtmltools.lachlanallison.com/",
+      "description": "A curated directory of browser-first tools where the browser does the work - especially single-file and offline-friendly HTML utilities with limited network or API dependence.",
+      "author": {
+        "@type": "Person",
+        "name": "Lachlan Allison",
+        "url": "https://lachlanallison.com/"
+      }
+    }
+    </script>
+
+    <script>
+      (function () {
+        var mode = "auto";
+        try {
+          var saved = localStorage.getItem("lht-theme");
+          if (["auto", "light", "dark"].indexOf(saved) !== -1) mode = saved;
+        } catch (error) {}
+        var theme = mode === "auto"
+          ? (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark")
+          : mode;
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    <link id="theme-css" rel="stylesheet" href="css/themes/site.css" data-base="css/themes/" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site">
+        <div class="header-top">
+          <a href="./" class="site-logo">
+            <img src="/favicon.svg" alt="" />
+            <span class="site-logo-wordmark">LOCAL HTML TOOLS</span>
+          </a>
+          <label class="theme-picker" for="theme-switcher">
+            <span class="sr-only">Theme</span>
+            <select id="theme-switcher" class="filter">
+              <option value="auto" selected>&#9680;&nbsp;&nbsp;Auto</option>
+              <option value="light">&#9788;&nbsp;&nbsp;Light</option>
+              <option value="dark">&#9790;&nbsp;&nbsp;Dark</option>
+            </select>
+          </label>
+        </div>
+        <div class="intro-row">
+          <p class="lede">
+            A curated list of browser-first tools where the browser does the work - especially single-file and offline-friendly HTML with limited network or API calls. Listings are
+            <a href="contributing.html">added via pull request</a> to keep the directory itself a simple static site.
+          </p>
+          <a href="badge/" class="intro-badge-link" aria-label="Get your badge">
+            <span>Get your badge:</span>
+            <img src="badge/badge.svg" alt="Listed on Local HTML Tools" />
+          </a>
+        </div>
+        <nav class="sub" aria-label="Directory controls">
+          <label class="search">
+            <span>Search</span>
+            <input type="search" id="q" name="q" placeholder="Name, tag, author..." autocomplete="off" />
+          </label>
+          <label for="category">
+            <span class="sr-only">Category</span>
+          </label>
+          <select id="category" class="filter">
+            <option value="">All categories</option>
+            <option value="images">Images &amp; design</option>
+            <option value="text-data">Text &amp; data</option>
+            <option value="developer">Developer</option>
+            <option value="productivity">Productivity</option>
+            <option value="education">Education</option>
+            <option value="audio-video">Audio &amp; video</option>
+            <option value="utilities">Utilities</option>
+            <option value="other">Other</option>
+          </select>
+        </nav>
+      </header>
+
+      <main>
+        <div id="tool-grid" class="tool-grid" aria-live="polite"></div>
+      </main>
+
+      <footer class="site">
+        <p>
+          Data lives in <code>data/tools.json</code>. See <a href="contributing.html">how to contribute</a> (and <code>CONTRIBUTING.md</code> in the repo).
+        </p>
+        <p>Inspired by the spirit of local-first, inspectable HTML - see e.g. Simon Willison's <a href="https://simonwillison.net/2025/Dec/10/html-tools/">HTML tools</a> write-up.</p>
+        <p>Built by <a href="https://lachlanallison.com/">Lachlan</a>.</p>
+      </footer>
+    </div>
+    <script src="js/theme.js" defer></script>
+    <script src="js/app.js" defer></script>
+  </body>
+</html>
+
+
+
