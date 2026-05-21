@@ -1,0 +1,28 @@
+# Local HTML Tools
+# https://localhtmltools.lachlanallison.com
+
+> Curated directory of browser-first, offline-friendly HTML utilities. Tools run locally in the browser with limited or no network dependence. Searchable, filterable, open source — submissions via pull request.
+
+## Main pages
+- /
+- /contributing.html
+- /badge/
+
+## Tool directory
+- 70+ curated tools with detail pages at /tool/{slug}/
+- Examples: /tool/chrome-session-viewer/, /tool/browser-extensions-icons/, /tool/map-a-route/, /tool/video-toolkit/
+- Full list and metadata in https://github.com/lachlanallison/local-html-tools/blob/main/data/tools.json
+
+## Categories
+- Images & design
+- Text & data
+- Developer
+- Productivity
+- Education
+- Audio & video
+- Utilities
+
+## About
+- Built by Lachlan Allison: https://lachlanallison.com/
+- Source: https://github.com/lachlanallison/local-html-tools
+- Sitemap: /sitemap.xml
