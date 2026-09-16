@@ -2374,6 +2374,41 @@
       "kind": "tool",
       "reference_urls": [],
       "added": "2026-05-14"
+    },
+    {
+      "id": "tinkerapp",
+      "name": "TinkerApp",
+      "summary": "Offline 3D editor for 3D printing in a single HTML file under 2 MB. Build models with shapes, text, and boolean operations, import/export STL, and autosave recent projects locally.",
+      "url": "https://alexanderantonov.github.io/tinkerapp/tinkerapp.html",
+      "source_url": "https://github.com/alexanderantonov/tinkerapp",
+      "authors": [
+        {
+          "name": "Alexander Antonov",
+          "github": "https://github.com/alexanderantonov"
+        }
+      ],
+      "license": null,
+      "tags": [
+        "cad",
+        "3d-printing",
+        "stl",
+        "webgl",
+        "single-file",
+        "offline"
+      ],
+      "categories": [
+        "utilities"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool",
+      "reference_urls": [
+        "https://www.youtube.com/watch?v=C_eOyg4yATI"
+      ],
+      "added": "2026-09-16"
     }
   ]
 }
