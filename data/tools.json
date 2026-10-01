@@ -2374,6 +2374,36 @@
       "kind": "tool",
       "reference_urls": [],
       "added": "2026-05-14"
+    },
+    {
+      "id": "liunengai-bug-report-builder",
+      "name": "LiuNengAI Bug Report Builder",
+      "summary": "Chinese-language form that assembles environment, reproduction steps, expected/actual behavior and error text into Markdown. Local processing, no login, no AI calls or code execution; save the single HTML file for offline use.",
+      "url": "https://liunenglabs.xyz/guides/debug-report/",
+      "source_url": "https://github.com/a941249849/liunengai-debug-report",
+      "authors": [
+        {
+          "name": "LiuNengAI",
+          "url": "https://liunenglabs.xyz/",
+          "github": "https://github.com/a941249849"
+        }
+      ],
+      "license": "MIT",
+      "tags": [
+        "bug-report",
+        "markdown",
+        "offline",
+        "single-file"
+      ],
+      "categories": [
+        "developer"
+      ],
+      "runtime": {
+        "single_file": true,
+        "offline": "yes",
+        "needs_network": false
+      },
+      "kind": "tool"
     }
   ]
 }
